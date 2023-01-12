@@ -422,7 +422,7 @@ header{
 }
 
 .logo{
-  flex-basis: 25%;
+  flex-basis: 20%;
   transition: 0.3s;
 }
 .logo img{
@@ -509,7 +509,7 @@ header{
 
 .itg-nav-link > a{
     line-height: 3rem;
-    padding: 0 .3rem !important;
+    padding: 0 .2rem !important;
     letter-spacing: 1px;
     font-size: 0.85rem !important;
     font-weight: 600;
@@ -517,7 +517,7 @@ header{
     align-items: center;
     justify-content: space-between;
     transition: .5s;
-    margin: 0 0.4rem !important;
+    margin: 0 0.3rem !important;
     text-decoration: none;
     background: linear-gradient(99deg, var(--theme-color) 2.84%, var(--main-color) 99.18%);
     -webkit-background-clip: text;
@@ -2042,6 +2042,7 @@ body.dark .record-circle.active {
     font-size: 1.3rem;
   }
 }
+/* ----- Responsive 450px ----- */
 @media (max-width: 450px) {
   .tabs ul li label span {
     font-size: 1.35rem;
@@ -2063,6 +2064,7 @@ body.dark .record-circle.active {
     font-size: 1.6rem !important;
   }
 }
+/* ----- Responsive 420px ----- */
 @media (max-width: 420px) {
   .tabs ul li label span {
     font-size: 1.1rem;
@@ -2077,6 +2079,12 @@ body.dark .record-circle.active {
   }
   .number{
     font-size: 1.4rem;
+  }
+}
+/* ----- Responsive 400px ----- */
+@media (max-width: 400px) {
+  .number{
+    font-size: 1.3rem;
   }
 }
 /* End Records */
@@ -2145,7 +2153,7 @@ body.dark .record-circle.active {
 }
 
 .card{
-  top: -3rem;
+  top: -5rem;
   width: 100%;
   margin: auto 0rem;
   overflow-y: auto;
@@ -2590,6 +2598,15 @@ body.dark .card-item-title{
     font-size: 30px !important;
   }
 }
+@media (max-width: 400px) {
+  .card{
+    width: 60% !important;
+  }
+  .card-avatar{
+    width: 105px;
+    height: 105px;
+  }
+}
 /* ------------- End Company Organization Section ------------ */
 /* ------------- Start Partner Section ------------- */
 .partner{
@@ -2856,6 +2873,11 @@ body.dark .marquee svg{
     font-size: 24px;
   }
 }
+
+@media (max-width: 420px) {
+  .partner{
+    min-height: 60vh;
+}
 /* ------------- End Partner Section ------------- */
 /* ------------- Start Customer Lists Section ------------- */
 .customer-lists{
@@ -3096,7 +3118,15 @@ body.dark .customer .customer-card .face.face2{
      transform: translateY(-50px);
   }
 }
-
+@media (max-width: 400px) {
+  .heading{
+    font-size: 1.4rem !important;
+  }
+  .customer .customer-card .face{
+    width: 178px;
+    height: 150px;
+  }
+}
 /*.customer .customer-card .face.face2 .content a:hover{
   background: #333 ;
   color: whitesmoke; 
@@ -3349,6 +3379,20 @@ body.dark .customer .customer-card .face.face2{
     font-size: 12px;
   }
 }
+@media (max-width: 400px) {
+  .project-container{
+    width: 90%;
+    height: 90%;
+    margin-bottom: 1rem !important;
+  }
+  .project-card{
+    height: 250px !important;
+  }
+  .copy{
+    font-size: 1.4rem;
+    width: 98%;
+  }
+}
 /* ------------- End Projects Section ------------- */
 /* ----------- Footer Section ----------- */
 .new_footer_area {
@@ -3365,7 +3409,7 @@ body.dark .new_footer_area {
 .footer_overlay{
   position: absolute;
   width: 100vw;
-  height: 50vh;
+  height: 60vh;
   background: rgba(0, 0, 0, 0.1);
   overflow: hidden;
 }
@@ -3599,7 +3643,7 @@ body.dark .new_footer_top .f_widget.about-widget .f_list li a {
 
 @media (max-width: 500px) {
   .new_footer_top, .footer_bottom{
-    padding: 0 3rem !important;
+    padding: 0 2rem !important;
   }
   .form-control{
     width: 50% !important;
