@@ -1084,7 +1084,7 @@ section {
   font-weight: 700;
   font-size: 18px;
   margin-bottom: 5px;
-  padding: 10px 30px;
+  padding: 10px 20px;
   text-transform: uppercase;
 }
 
@@ -1116,7 +1116,7 @@ section {
 }
 
 .services .card p {
-  padding: 0 30px;
+  padding: 0 20px;
   margin-bottom: 20px;
   color: var(--color-secondary);
   font-size: 15px;
@@ -1470,4 +1470,16 @@ section {
   #footer .credits {
     padding-top: 4px;
   }
+}
+/*--------------------------------------------------------------
+# Services Page
+--------------------------------------------------------------*/
+.it-services {
+  height: 60vh !important;
+  border-bottom-left-radius: 10rem;
+}
+
+.card ul li{
+  font-size: 0.9rem;
+  color: #001973;
 }
