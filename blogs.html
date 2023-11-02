@@ -185,6 +185,10 @@
     <script>
         $(document).ready(function() {
             $(function() {
+                let loading = `
+                                <div class="text-center mb-4 fs-2 fw-bold">Loading ...</div>
+                            `;
+                $('.blogs-wrap').html(loading);
                 $.ajax({
                     url: 'https://admin.itgatewaymm.com/api/v1/blogs',
                     type: 'get',
