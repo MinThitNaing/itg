@@ -1863,6 +1863,257 @@ section {
 }
 
 /*--------------------------------------------------------------
+# Solution Page
+--------------------------------------------------------------*/
+.pointer {
+  cursor: pointer;
+}
+.solution-row {
+  padding: 30px 15%;
+}
+.solution-tab-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.solution-tab {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #f2f2f2;
+  position: relative;
+  height: 60px;
+}
+
+.solution-tab img {
+  width: 35px;
+}
+
+.solution-tab h4 {
+  font-size: 18px;
+}
+
+.solution-tab::before {
+  content: "";
+  position: absolute;
+  border: 30px solid transparent;
+  border-left-color: #f2f2f2;
+  border-bottom-color: #f2f2f2;
+  left: 100%;
+}
+
+.solution-tab.active {
+  background-color: #a5a5e7;
+}
+
+.solution-tab.active::before {
+  content: "";
+  position: absolute;
+  border: 30px solid transparent;
+  border-left-color: #a5a5e7;
+  border-bottom-color: #a5a5e7;
+  left: 100%;
+}
+
+.solution-tab h4 {
+  color: #c51567;
+  font-weight: bold;
+}
+
+.solution-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  padding-bottom: 50px;
+  border-radius: 7px;
+  position: relative;
+  border: 2px solid #af4f00;
+}
+
+.solution-card span {
+  font-weight: bold;
+  color: #5e280b;
+}
+
+.solution-card h3 {
+  font-weight: bold;
+  font-size: 22px;
+  color: #5e280b;
+}
+
+.solution-card .price {
+  font-size: 27px;
+  color: rgb(230, 88, 7);
+}
+
+.solution-card .solution-icon {
+  width: 40px;
+}
+
+.solution-card .solution-support {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding-top: 5px;
+  border-radius: 100px;
+  background: linear-gradient(to right, rgb(224, 143, 22), rgb(42, 42, 172));
+  position: absolute;
+  width: 70%;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.solution-card .support-price {
+  color: yellow;
+}
+
+.additional-card {
+  border: 2px solid #af4f00;
+  padding: 20px 0px;
+}
+
+.additional-card img {
+  width: 90px;
+}
+
+.additional-card ul {
+  height: 120px;
+}
+
+.additional-card ul li {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+@media (max-width: 1650px) {
+  .solution-row {
+    padding: 30px 3%;
+  }
+}
+
+@media (max-width: 1365px) {
+  .solution-tab {
+    width: 230px;
+  }
+}
+
+@media (max-width: 1215px) {
+  .solution-tab {
+    height: 60px;
+    width: 200px;
+  }
+
+  .solution-tab img {
+    width: 35px;
+  }
+
+  .solution-tab::before {
+    content: "";
+    position: absolute;
+    border: 30px solid transparent;
+    border-left-color: #f2f2f2;
+    border-bottom-color: #f2f2f2;
+    left: 100%;
+  }
+
+  .solution-tab.active::before {
+    content: "";
+    position: absolute;
+    border: 30px solid transparent;
+    border-left-color: #a5a5e7;
+    border-bottom-color: #a5a5e7;
+    left: 100%;
+  }
+
+  .solution-tab h4 {
+    font-size: 17px;
+  }
+
+  .solution-card {
+    gap: 5px;
+  }
+
+  .solution-card h4 {
+    font-size: 17px;
+  }
+
+  .solution-card h3 {
+    font-size: 19px;
+  }
+
+  .solution-card .price {
+    font-size: 23px;
+  }
+
+  .solution-card .solution-icon {
+    width: 25px;
+  }
+
+  .solution-card .solution-support h3 {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 768px) {
+  .solution-tab {
+    width: 400px;
+  }
+  .solution-tab-wrapper {
+    align-items: center;
+  }
+
+  .solution-tab h4 {
+    font-size: 20px;
+  }
+
+  .solution-card {
+    gap: 10px;
+  }
+
+  .solution-card h3 {
+    font-size: 24px;
+  }
+
+  .solution-card .price {
+    font-size: 29px;
+  }
+
+  .solution-card h4 {
+    font-size: 22px;
+  }
+
+  .solution-card .solution-icon {
+    width: 35px;
+  }
+
+  .solution-card .solution-support h3 {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 630px) {
+  .solution-tab {
+    width: 300px;
+  }
+  .solution-tab-wrapper {
+    align-items: start;
+    margin-left: 50px;
+  }
+}
+
+@media (max-width: 460px) {
+  .solution-tab {
+    width: 250px;
+  }
+  .solution-tab-wrapper {
+    margin-left: 10px;
+  }
+}
+
+/*--------------------------------------------------------------
 # Services Page
 --------------------------------------------------------------*/
 
